@@ -57,7 +57,10 @@ trifle.src = 'Trifle1.jpeg';
 trifle.height = '50'
 triflediv.appendChild(trifle);
 
-
+const image = document.createElement('img');
+image.src="Background1.jpg";
+pageContent.appendChild(image)
+image.classList.add('background');
 
 }
 

@@ -11,7 +11,8 @@ pageContent.appendChild(headLine);
 
 const image = document.createElement('img');
 image.src="Background1.jpg";
-pageContent.appendChild(image);
+pageContent.appendChild(image)
+image.classList.add('background');
 
 const copy = document.createElement('p');
 copy.textContent ='Try one of our CLASSIC South African treats!';
