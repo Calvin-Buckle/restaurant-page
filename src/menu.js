@@ -1,6 +1,9 @@
 const createMenuPage = () => {
+    const content = document.querySelector('#content')
+    const pageContent = document.createElement('div')
+    pageContent.classList.add('page-content')
+    content.appendChild(pageContent)
 
-const container = document.querySelector('#container')
 
 const brandydiv = document.createElement('div');
 const koeksisterdiv = document.createElement('div');
@@ -9,12 +12,12 @@ const melkkosdiv = document.createElement('div');
 const melktertdiv = document.createElement('div');
 const triflediv = document.createElement('div');
 
-container.appendChild(brandydiv)
-container.appendChild(koeksisterdiv)
-container.appendChild(malvadiv)
-container.appendChild(melkkosdiv)
-container.appendChild(melktertdiv)
-container.appendChild(triflediv)
+pageContent.appendChild(brandydiv)
+pageContent.appendChild(koeksisterdiv)
+pageContent.appendChild(malvadiv)
+pageContent.appendChild(melkkosdiv)
+pageContent.appendChild(melktertdiv)
+pageContent.appendChild(triflediv)
 
 brandydiv.textContent="R65 Brandy Pudding!";
 koeksisterdiv.textContent= "R45 Koek Sister!";
@@ -54,6 +57,10 @@ trifle.src = 'Trifle1.jpeg';
 trifle.height = '50'
 triflediv.appendChild(trifle);
 
+
+
 }
+
+
 
 export default createMenuPage;
